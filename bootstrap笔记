@@ -6,3 +6,90 @@ container  固定宽度，不同的分辨率时采用不同的大小
    col-md 中屏  >=992
    col-xm 小屏  >=768
    col-xs 自适应  <768
+
+  偏移 
+    col-lg-offset 只能往后偏，超过12时就会往下一行排
+  列排序
+    col-lg-push 往后排
+    col-lg-pull 往前排
+
+嵌套
+   col嵌套row,可以将它的父级分成12份
+清浮动clearfix
+缩略图thumbnail
+使节点两边有一定空隙caption
+响应式工具：
+  针对不同设备展示和隐藏页面内容
+ 可见类：visible-lg-block 当不满足分辨率范围内时就会隐藏
+ 不可见类：hidden-sm  当满足分辨率范围时就会隐藏
+
+根据分辨率的不同显示侧边栏
+  pull-left 左浮动
+  pull-right 右浮动
+  affix 固定定位
+  word-wrap:break-wrap; 换行
+  word-wrap:nowrap;     不换行
+
+Glyphicons字体图标
+注意把字体包放在和css同一目录，也可以修改默认路径
+  尽量做图标的时候用单独的一个容器
+  好处
+   -减少请求
+   -容易控制样式
+   -例子淘宝
+  用法
+   -font-face 
+   -字体路径 
+自定义字体图标：
+   使用工具将制作好的图标装换成字体图标；
+   如何让对应的图标使用对应的class，生成的网站当中就会有对应的编码，写到对应的样式当中
+
+预定义样式风格
+   primary(首选项)
+   success(成功)
+   info(一般信息)
+   warning(警告)
+   danger(危险)
+   实例（登入框）
+ 使用方法：
+   bg-primary
+   btn-primary 
+   text-primary
+   警告框：alert alert-danger
+
+panel 面板
+panel-heading
+panel-body
+ form-group 表单组
+ form-control
+
+按钮
+  基类：btn
+  样式：
+  btn-default
+  btn-link
+  大小：
+  btn-lg/sm/xs
+  input-lg/sm/xs
+状态：
+  active
+  disabled
+
+种类：a input button
+   btn-block 自适应块
+按钮组：
+   btn-group   默认紧挨一起
+   btn-justify 端点对齐a可以直接使用但是如果是button和input需要在添加一个盒子class为btn-group
+   btn-vertical 纵向排列
+
+   btn-group-lg 控制大小
+caret向下的箭头
+   一旦按钮需要和图标组合时尽量不要使用input
+
+实例:github按钮组
+
+下拉菜单:
+   父级要有class:dropdown
+   按钮要有class：dropdown-toggle
+   data-toggle='dropdown'
+   下拉的列表要有classdropdown-menu
