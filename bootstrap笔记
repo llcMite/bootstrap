@@ -1,0 +1,8 @@
+container-fluid  流体盒子自适应
+container  固定宽度，不同的分辨率时采用不同的大小
+   row  行
+   col  列  分为12列
+   col-lg 大屏  >=1200
+   col-md 中屏  >=992
+   col-xm 小屏  >=768
+   col-xs 自适应  <768
