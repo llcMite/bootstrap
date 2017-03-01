@@ -93,3 +93,53 @@ caret向下的箭头
    按钮要有class：dropdown-toggle
    data-toggle='dropdown'
    下拉的列表要有classdropdown-menu
+
+   下拉的是不占布局位置
+      指定第一行为class="dropdown-header" 不能选中
+      选中状态添加active
+      dropup就变成向上拉
+      text-center 文字居中
+
+给下拉加运动：给他下拉的块加css3就可以了
+
+区分手机端和移动端
+  if(window.navigator.userAgent.toLowerCase().indexOf('mobile')==-1){
+    $('.dropdown-toggle').on('mouseover',function(){
+        alert(1)
+    })
+  }
+data-target=".dropdown"  选择操作所有class为dropdown的元素
+
+标签页和选项卡
+    nav nav-tabs
+    nav-justify  两端对齐
+    nav-tabs-justify 线与按钮对齐
+    nav-pills 按钮状
+    nav-stacked
+   标签页的内容部分：
+     class=“tab-content”
+     列表class=“tab-pane”
+
+     给选项卡的每一个按钮加上data-toggle='tab'
+     给内容分别加上id
+     给按钮加上锚点
+     这样就可以切换了
+导航条：
+  navbar 
+  navbar-default
+  navbar-fixed-top 固定的导航条
+  {
+  div.navbar-header
+  navbar--brand  加logo
+  }
+  navbar-right 右浮动
+  在导航条上加按钮 navbar-btn
+  在导航条添加链接
+  navbar-link
+  文字
+  navbar-text
+  输入框
+  navbar-form
+实例：知乎导航条
+
+用于开发的话，主要用于布局，做功能还是要用js手写，因为bootstrap比较趋向于定制化，不适合做功能开发
